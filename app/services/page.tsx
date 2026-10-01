@@ -5,7 +5,7 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Bespoke carpentry and joinery services — fitted wardrobes, kitchens, alcove units, TV & media units, home offices and more. Made-to-measure by Oak & Craft.",
+    "Bespoke carpentry and joinery services — fitted wardrobes, kitchens, alcove units, TV & media units, home offices and more. Made-to-measure by Perfect Space Interior.",
 };
 
 export default function ServicesPage() {

@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Shared TypeScript Types
+// Perfect Space Interior — Shared TypeScript Types
 // ============================================================
 
 export interface Service {

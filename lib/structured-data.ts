@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Structured Data (JSON-LD)
+// Perfect Space Interior — Structured Data (JSON-LD)
 // ============================================================
 // Only populated with real business data that is actually
 // available in data/business.ts. No fake addresses, phone

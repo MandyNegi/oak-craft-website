@@ -19,7 +19,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://oakandcraft.co.uk";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://perfectspaceinterior.co.uk";
 const serviceAreaString =
   business.serviceAreas.length > 0
     ? business.serviceAreas.slice(0, 3).join(", ")

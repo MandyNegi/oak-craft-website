@@ -29,7 +29,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex flex-col leading-none mb-4">
               <span className="font-heading text-2xl font-bold tracking-tight">
-                OAK & CRAFT
+                PERFECT SPACE INTERIOR
               </span>
               <span className="text-[10px] tracking-[0.18em] font-medium uppercase text-white/50 mt-0.5">
                 Bespoke Carpentry &amp; Joinery
@@ -52,7 +52,7 @@ export function Footer() {
                     href={`https://instagram.com/${business.socialMedia.instagram}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Oak & Craft on Instagram"
+                    aria-label="Perfect Space Interior on Instagram"
                     className="text-white/50 hover:text-white transition-colors"
                   >
                     <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -67,7 +67,7 @@ export function Footer() {
                     href={business.socialMedia.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Oak & Craft on Facebook"
+                    aria-label="Perfect Space Interior on Facebook"
                     className="text-white/50 hover:text-white transition-colors"
                   >
                     <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -80,7 +80,7 @@ export function Footer() {
                     href={business.socialMedia.houzz}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Oak & Craft on Houzz"
+                    aria-label="Perfect Space Interior on Houzz"
                     className="text-white/50 hover:text-white transition-colors text-xs font-bold"
                   >
                     Houzz

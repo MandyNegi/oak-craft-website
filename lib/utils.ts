@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Utility Functions
+// Perfect Space Interior — Utility Functions
 // ============================================================
 
 /** Format a phone number for tel: links (strips spaces, dashes, brackets) */

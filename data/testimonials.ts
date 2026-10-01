@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Testimonials Data
+// Perfect Space Interior — Testimonials Data
 // ============================================================
 // IMPORTANT: These are PLACEHOLDER testimonials only.
 // They are NOT presented as genuine customer reviews on the

@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Business Configuration
+// Perfect Space Interior — Business Configuration
 // ============================================================
 // Replace placeholder values with real business information.
 // Fields left as empty strings will be conditionally hidden
@@ -9,7 +9,7 @@
 import type { BusinessConfig } from "@/types";
 
 export const business: BusinessConfig = {
-  name: "Oak & Craft",
+  name: "Perfect Space Interior",
   tagline: "Bespoke Carpentry & Joinery",
 
   // TODO: Add real phone number

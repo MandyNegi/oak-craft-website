@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Oak & Craft privacy policy — how we handle your personal information.",
+  description: "Perfect Space Interior privacy policy — how we handle your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -34,7 +34,7 @@ export default function PrivacyPage() {
             </h2>
             <p className="text-[var(--text-muted)] leading-relaxed">
               {/* TODO: Replace with real business details */}
-              Oak & Craft is a bespoke carpentry and joinery business based in the UK.
+              Perfect Space Interior is a bespoke carpentry and joinery business based in the UK.
               [Add full business name, address and contact details here once available.]
             </p>
           </section>
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
           </section>
 
           <p className="text-xs text-[var(--text-muted)] pt-4 border-t border-[var(--border)]">
-            &copy; {year} Oak & Craft. All rights reserved.
+            &copy; {year} Perfect Space Interior. All rights reserved.
           </p>
         </div>
       </div>

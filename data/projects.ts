@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Projects Data
+// Perfect Space Interior — Projects Data
 // ============================================================
 // IMPORTANT: These are PLACEHOLDER / DEMO projects only.
 // They are NOT presented as real completed projects on the

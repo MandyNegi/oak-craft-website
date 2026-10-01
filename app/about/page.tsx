@@ -4,7 +4,7 @@ import { CTAButton } from "@/components/ui/CTAButton";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Oak & Craft — bespoke carpentry and joinery built around your home. Learn about our approach to made-to-measure craftsmanship.",
+    "Perfect Space Interior — bespoke carpentry and joinery built around your home. Learn about our approach to made-to-measure craftsmanship.",
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="bg-[var(--charcoal)] py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs tracking-[0.15em] uppercase font-medium text-[var(--oak)] mb-4">
-            About Oak & Craft
+            About Perfect Space Interior
           </p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-semibold text-white max-w-xl leading-tight">
             Craftsmanship That Fits Your Space

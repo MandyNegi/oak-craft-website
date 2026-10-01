@@ -6,7 +6,7 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Frequently asked questions about bespoke carpentry, pricing, quotations, timescales and our process. Oak & Craft — made-to-measure joinery.",
+    "Frequently asked questions about bespoke carpentry, pricing, quotations, timescales and our process. Perfect Space Interior — made-to-measure joinery.",
 };
 
 export default function FAQPage() {

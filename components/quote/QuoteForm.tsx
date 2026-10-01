@@ -550,7 +550,7 @@ export function QuoteForm() {
                   aria-invalid={!!errors.consent}
                 />
                 <span className="text-sm text-[var(--text-muted)]">
-                  I agree to Oak & Craft contacting me about my enquiry. View our{" "}
+                  I agree to Perfect Space Interior contacting me about my enquiry. View our{" "}
                   <Link
                     href="/privacy"
                     className="text-[var(--charcoal)] underline underline-offset-2 hover:text-[var(--warm-brown)] transition-colors"

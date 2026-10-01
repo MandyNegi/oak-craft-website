@@ -1,5 +1,5 @@
 // ============================================================
-// Oak & Craft — Services Data
+// Perfect Space Interior — Services Data
 // ============================================================
 // Update descriptions, images, and content to match the
 // real business offering. Images use Unsplash URLs as
@@ -28,9 +28,9 @@ export const services: Service[] = [
       "Sliding or hinged door options",
       "Professional installation included",
     ],
-    metaTitle: "Fitted Wardrobes | Bespoke Made-to-Measure | Oak & Craft",
+    metaTitle: "Fitted Wardrobes | Bespoke Made-to-Measure | Perfect Space Interior",
     metaDescription:
-      "Made-to-measure fitted wardrobes designed and built around your room. Bespoke storage solutions by Oak & Craft.",
+      "Made-to-measure fitted wardrobes designed and built around your room. Bespoke storage solutions by Perfect Space Interior.",
   },
   {
     slug: "bespoke-kitchens",
@@ -51,9 +51,9 @@ export const services: Service[] = [
       "Island and breakfast bar options",
       "Larder and pantry units",
     ],
-    metaTitle: "Bespoke Kitchens | Handmade & Made-to-Measure | Oak & Craft",
+    metaTitle: "Bespoke Kitchens | Handmade & Made-to-Measure | Perfect Space Interior",
     metaDescription:
-      "Handmade bespoke kitchens designed around your space and lifestyle. Request a free quotation from Oak & Craft.",
+      "Handmade bespoke kitchens designed around your space and lifestyle. Request a free quotation from Perfect Space Interior.",
   },
   {
     slug: "alcove-units",
@@ -74,9 +74,9 @@ export const services: Service[] = [
       "Built-in desks or window seat options",
       "Professional installation",
     ],
-    metaTitle: "Alcove Units & Shelving | Bespoke Built-In Storage | Oak & Craft",
+    metaTitle: "Alcove Units & Shelving | Bespoke Built-In Storage | Perfect Space Interior",
     metaDescription:
-      "Bespoke alcove units and shelving built to fit your space perfectly. Oak & Craft — made-to-measure carpentry.",
+      "Bespoke alcove units and shelving built to fit your space perfectly. Perfect Space Interior — made-to-measure carpentry.",
   },
   {
     slug: "tv-media-units",
@@ -97,9 +97,9 @@ export const services: Service[] = [
       "Ambient LED lighting options",
       "Range of finishes",
     ],
-    metaTitle: "Bespoke TV & Media Units | Made-to-Measure | Oak & Craft",
+    metaTitle: "Bespoke TV & Media Units | Made-to-Measure | Perfect Space Interior",
     metaDescription:
-      "Bespoke TV and media units with integrated storage and cable management. Made-to-measure by Oak & Craft.",
+      "Bespoke TV and media units with integrated storage and cable management. Made-to-measure by Perfect Space Interior.",
   },
   {
     slug: "under-stairs-storage",
@@ -120,9 +120,9 @@ export const services: Service[] = [
       "Dog nook or play space options",
       "Professional installation",
     ],
-    metaTitle: "Under-Stairs Storage | Bespoke Fitted Solutions | Oak & Craft",
+    metaTitle: "Under-Stairs Storage | Bespoke Fitted Solutions | Perfect Space Interior",
     metaDescription:
-      "Bespoke under-stairs storage solutions making the most of every inch. Made-to-measure by Oak & Craft.",
+      "Bespoke under-stairs storage solutions making the most of every inch. Made-to-measure by Perfect Space Interior.",
   },
   {
     slug: "home-offices",
@@ -143,9 +143,9 @@ export const services: Service[] = [
       "Cupboard and filing storage",
       "Range of finishes",
     ],
-    metaTitle: "Bespoke Home Offices | Fitted Desks & Storage | Oak & Craft",
+    metaTitle: "Bespoke Home Offices | Fitted Desks & Storage | Perfect Space Interior",
     metaDescription:
-      "Purpose-built home office furniture designed around your space. Bespoke by Oak & Craft.",
+      "Purpose-built home office furniture designed around your space. Bespoke by Perfect Space Interior.",
   },
   {
     slug: "bespoke-furniture",
@@ -166,9 +166,9 @@ export const services: Service[] = [
       "Structural joinery",
       "Handcrafted details",
     ],
-    metaTitle: "Bespoke Furniture | Handmade to Order | Oak & Craft",
+    metaTitle: "Bespoke Furniture | Handmade to Order | Perfect Space Interior",
     metaDescription:
-      "Handmade bespoke furniture created to your exact specification. One-off pieces by Oak & Craft.",
+      "Handmade bespoke furniture created to your exact specification. One-off pieces by Perfect Space Interior.",
   },
   {
     slug: "general-carpentry",
@@ -189,8 +189,8 @@ export const services: Service[] = [
       "Timber framing",
       "Repairs and restoration",
     ],
-    metaTitle: "General Carpentry & Joinery | Professional & Reliable | Oak & Craft",
+    metaTitle: "General Carpentry & Joinery | Professional & Reliable | Perfect Space Interior",
     metaDescription:
-      "Professional carpentry and joinery services for residential projects. Oak & Craft — quality craftsmanship.",
+      "Professional carpentry and joinery services for residential projects. Perfect Space Interior — quality craftsmanship.",
   },
 ];

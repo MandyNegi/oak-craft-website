@@ -67,7 +67,7 @@ export function Navbar() {
                 textColor
               )}
             >
-              OAK & CRAFT
+              PERFECT SPACE INTERIOR
             </span>
             <span
               className={cn(
@@ -161,7 +161,7 @@ export function Navbar() {
         <div className="h-16 flex items-center justify-between px-4 border-b border-[var(--border)]">
           <Link href="/" className="flex flex-col leading-none">
             <span className="font-heading text-xl font-bold tracking-tight text-[var(--charcoal)]">
-              OAK & CRAFT
+              PERFECT SPACE INTERIOR
             </span>
             <span className="text-[9px] tracking-[0.18em] font-medium uppercase text-[var(--text-muted)]">
               Bespoke Carpentry &amp; Joinery
