@@ -1,69 +1,105 @@
-import Image from "next/image";
+import { Hero } from "@/components/sections/Hero";
+import { TrustStrip } from "@/components/sections/TrustStrip";
+import { ServiceGrid } from "@/components/sections/ServiceGrid";
+import { ProjectGallery } from "@/components/sections/ProjectGallery";
+import { ProcessSteps } from "@/components/sections/ProcessSteps";
+import { ContactCTA } from "@/components/sections/ContactCTA";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { ServiceAreaSection } from "@/components/sections/ServiceAreaSection";
+import { BeforeAfterSlider } from "@/components/sections/BeforeAfterSlider";
+import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
+import { faqs } from "@/data/faqs";
+import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { CTAButton } from "@/components/ui/CTAButton";
 
-export default function Home() {
+export default function HomePage() {
+  const previewFaqs = faqs.slice(0, 5);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      {/* Hero */}
+      <Hero />
+
+      {/* Trust strip */}
+      <TrustStrip />
+
+      {/* Services */}
+      <ServiceGrid limit={8} showCTA />
+
+      {/* Featured Projects */}
+      <ProjectGallery limit={6} showFilters={false} />
+
+      {/* Before & After */}
+      <section className="py-20 lg:py-28 bg-white" aria-labelledby="before-after-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateOnScroll className="mb-12 max-w-xl">
+            <p className="text-xs tracking-[0.15em] uppercase font-medium text-[var(--warm-brown)] mb-3">
+              Transformations
+            </p>
+            <h2
+              id="before-after-heading"
+              className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-[var(--charcoal)] mb-4"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              From Empty Space to Something Made for You
+            </h2>
+            <p className="text-[var(--text-muted)] leading-relaxed">
+              Every space has its quirks. We build around them.
+            </p>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <BeforeAfterSlider
+              beforeSrc="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80"
+              afterSrc="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+              beforeAlt="Empty alcove space before bespoke unit was fitted"
+              afterAlt="Fitted alcove unit with shelving and cabinetry installed"
+              label="Alcove — before & after"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <BeforeAfterSlider
+              beforeSrc="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+              afterSrc="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80"
+              beforeAlt="Bare spare bedroom before home office conversion"
+              afterAlt="Fitted home office with desk and shelving installed"
+              label="Home office — before & after"
+            />
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Process */}
+      <ProcessSteps />
+
+      {/* Quote CTA */}
+      <ContactCTA />
+
+      {/* Reviews */}
+      <TestimonialsSection />
+
+      {/* FAQ snippet */}
+      <section className="py-20 lg:py-28 bg-white" aria-labelledby="faq-home-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateOnScroll className="mb-10">
+            <p className="text-xs tracking-[0.15em] uppercase font-medium text-[var(--warm-brown)] mb-3">
+              Common Questions
+            </p>
+            <h2
+              id="faq-home-heading"
+              className="font-heading text-3xl sm:text-4xl font-semibold text-[var(--charcoal)]"
+            >
+              Frequently Asked Questions
+            </h2>
+          </AnimateOnScroll>
+          <FAQAccordion faqs={previewFaqs} />
+          <div className="mt-8">
+            <CTAButton href="/faq" variant="outline" size="md">
+              View All FAQs
+            </CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Service areas */}
+      <ServiceAreaSection />
+    </>
   );
 }

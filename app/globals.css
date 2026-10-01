@@ -1,26 +1,117 @@
 @import "tailwindcss";
 
+/* ============================================================
+   Oak & Craft — Global Styles & Design Tokens
+   ============================================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colour palette */
+  --ivory: #F8F5F0;
+  --ivory-dark: #F0EBE3;
+  --charcoal: #1C1C1C;
+  --charcoal-light: #2D2D2D;
+  --warm-brown: #8B6914;
+  --oak: #C49A3C;
+  --beige: #E8E0D5;
+  --beige-light: #F2EDE6;
+  --muted-green: #4A5C4D;
+  --muted-green-light: #5E7361;
+  --text-body: #3D3D3D;
+  --text-muted: #6B6B6B;
+  --border: #D9D0C4;
+
+  /* Typography */
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
+
+  /* Spacing */
+  --section-padding: clamp(4rem, 8vw, 8rem);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ============================================================
+   Base
+   ============================================================ */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ivory);
+  color: var(--text-body);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   Typography helpers
+   ============================================================ */
+
+.font-heading {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+.text-display {
+  font-family: var(--font-heading), Georgia, serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Focus styles
+   ============================================================ */
+
+:focus-visible {
+  outline: 2px solid var(--oak);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Before/After Slider
+   ============================================================ */
+
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+/* ============================================================
+   Scrollbar (subtle)
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
