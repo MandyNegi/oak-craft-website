@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { generateLocalBusinessSchema } from "@/lib/structured-data";
 import { business } from "@/data/business";
 
@@ -92,6 +93,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyMobileCTA />
+        <WhatsAppButton />
       </body>
     </html>
   );

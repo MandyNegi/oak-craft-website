@@ -46,19 +46,23 @@ export function Footer() {
             )}
             {/* Social Icons */}
             {hasSocial && (
-              <div className="flex gap-4 mt-6">
+              <div className="flex gap-3 mt-6">
                 {business.socialMedia.instagram && (
                   <a
-                    href={`https://instagram.com/${business.socialMedia.instagram}`}
+                    href={business.socialMedia.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Perfect Space Interior on Instagram"
-                    className="text-white/50 hover:text-white transition-colors"
+                    className="flex items-center justify-center w-9 h-9 rounded-lg hover:opacity-80 transition-opacity"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+                    }}
                   >
-                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="1.8" aria-hidden="true">
                       <rect x="2" y="2" width="20" height="20" rx="5" />
                       <circle cx="12" cy="12" r="4" />
-                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none" />
                     </svg>
                   </a>
                 )}
@@ -68,9 +72,10 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Perfect Space Interior on Facebook"
-                    className="text-white/50 hover:text-white transition-colors"
+                    className="flex items-center justify-center w-9 h-9 rounded-lg hover:opacity-80 transition-opacity"
+                    style={{ background: "#1877F2" }}
                   >
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg width="18" height="18" fill="white" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                     </svg>
                   </a>
@@ -81,9 +86,10 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Perfect Space Interior on Houzz"
-                    className="text-white/50 hover:text-white transition-colors text-xs font-bold"
+                    className="flex items-center justify-center w-9 h-9 rounded-lg hover:opacity-80 transition-opacity text-white text-xs font-bold"
+                    style={{ background: "#4DBC15" }}
                   >
-                    Houzz
+                    Hz
                   </a>
                 )}
               </div>

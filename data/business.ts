@@ -43,11 +43,11 @@ export const business: BusinessConfig = {
   ],
 
   socialMedia: {
-    // TODO: Add real Instagram handle (without @) or leave empty
-    instagram: "",
-    // TODO: Add real Facebook page URL or leave empty
-    facebook: "",
-    // TODO: Add real Houzz profile URL or leave empty
-    houzz: "",
+    // Read from NEXT_PUBLIC_INSTAGRAM_URL env var — leave empty to hide
+    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
+    // Read from NEXT_PUBLIC_FACEBOOK_URL env var — leave empty to hide
+    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "",
+    // Read from NEXT_PUBLIC_HOUZZ_URL env var — leave empty to hide
+    houzz: process.env.NEXT_PUBLIC_HOUZZ_URL ?? "",
   },
 };

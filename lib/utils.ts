@@ -12,6 +12,18 @@ export function formatWhatsAppLink(number: string): string {
   return `https://wa.me/${number.replace(/[^\d]/g, "")}`;
 }
 
+/**
+ * Build a wa.me URL with a pre-filled message.
+ * Returns null if the number env var is missing or empty — callers should
+ * hide the WhatsApp UI entirely in that case.
+ */
+export function buildWhatsAppUrl(message: string): string | null {
+  const raw = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
+  const digits = raw.replace(/[^\d]/g, "");
+  if (!digits) return null;
+  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+}
+
 /** Clamp a number between min and max */
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
