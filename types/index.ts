@@ -26,7 +26,7 @@ export interface Project {
   description: string;
   shortDescription: string;
   /** Clearly marked: demo/placeholder content only */
-  isPlaceholder: boolean;
+  isPlaceholder?: boolean;
 }
 
 export interface ProjectImage {
@@ -49,7 +49,7 @@ export interface Testimonial {
   projectType: string;
   location: string;
   /** Clearly marked: placeholder/demo testimonial */
-  isPlaceholder: boolean;
+  isPlaceholder?: boolean;
 }
 
 export interface FAQ {

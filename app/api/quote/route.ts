@@ -1,20 +1,24 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// Module-level singleton — instantiated once per Lambda container lifecycle,
+// reused across all warm invocations to avoid unnecessary cold-start overhead.
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    
+
     // Check if the API key is configured
-    if (!process.env.RESEND_API_KEY) {
+    if (!resend) {
       console.error("RESEND_API_KEY is missing in environment variables.");
       return NextResponse.json(
         { error: "Server configuration error" },
         { status: 500 }
       );
     }
-
-    const resend = new Resend(process.env.RESEND_API_KEY);
     
     // Use the verified domain email, or Resend's testing email
     const fromEmail = process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev";

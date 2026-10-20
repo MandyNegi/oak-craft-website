@@ -1,15 +1,64 @@
 // ============================================================
 // Perfect Space Interior — Projects Data
 // ============================================================
-// IMPORTANT: These are PLACEHOLDER / DEMO projects only.
-// They are NOT presented as real completed projects on the
-// live website. Replace with real project data and photography
-// before going live.
+// Real completed projects appear first (no isPlaceholder flag).
+// Demo/placeholder entries are kept below for reference and
+// should be replaced with real photography before going live.
 // ============================================================
 
 import type { Project } from "@/types";
 
 export const projects: Project[] = [
+  // ── REAL PROJECTS ──────────────────────────────────────────
+  {
+    slug: "fitted-wardrobe-with-internal-storage",
+    title: "Fitted Wardrobe with Internal Storage",
+    category: "Wardrobes",
+    location: "UK",
+    coverImage: "/projects/project-1-b.jpg",
+    coverImageAlt:
+      "Fitted wardrobe in warm oak finish with brushed steel bar handles",
+    shortDescription:
+      "A full-height fitted wardrobe in a warm oak finish, with a bespoke internal layout combining hanging rail, shelving and a six-drawer chest.",
+    description:
+      "This fitted wardrobe was designed to make the most of an alcove space in the bedroom. The exterior is finished in a warm oak foil with slim brushed-steel bar handles, sitting flush from floor to ceiling for a clean, built-in look. Inside, the layout is fully bespoke — a hanging rail at the top, adjustable shelves in the centre, and a generous six-drawer chest below. LED strip lighting inside the carcass adds a premium finishing touch.",
+    images: [
+      {
+        src: "/projects/project-1-b.jpg",
+        alt: "Fitted wardrobe exterior in warm oak finish, floor-to-ceiling with brushed steel handles",
+      },
+      {
+        src: "/projects/project-1-c.jpg",
+        alt: "Wardrobe interior showing hanging rail, shelves and six-drawer chest with LED lighting",
+      },
+      {
+        src: "/projects/project-1-a.jpg",
+        alt: "Close-up of wardrobe interior shelving section and drawer chest from the side",
+      },
+    ],
+  },
+  {
+    slug: "media-wall-with-fluted-panel-and-led-shelving",
+    title: "Media Wall with Fluted Panel & LED Shelving",
+    category: "Media Units",
+    location: "UK",
+    coverImage: "/projects/project-1-d.jpg",
+    coverImageAlt:
+      "Full-width bespoke media wall with fluted centre panel, large TV recess, LED-lit open shelving and lower cabinets with matte black handles",
+    shortDescription:
+      "A full-width media wall featuring a fluted centre panel, LED-lit open shelving and lower storage cabinets — all finished in a soft warm grey.",
+    description:
+      "A standout feature wall for a living room, designed and built to run the full width of the room. The centrepiece is a fluted vertical panel behind the TV recess, adding texture and depth without overwhelming the space. Open shelving either side is fitted with warm LED strip lighting, creating an elegant ambient glow. Lower cabinets with matte black bar handles provide generous hidden storage. The whole unit is finished in a soft warm grey, complementing the existing décor perfectly.",
+    images: [
+      {
+        src: "/projects/project-1-d.jpg",
+        alt: "Full-width media wall with fluted panel, LED shelving and lower cabinets in warm grey",
+      },
+    ],
+  },
+
+  // ── DEMO / PLACEHOLDER PROJECTS ────────────────────────────
+  // Replace these with real photography and project details.
   {
     slug: "bespoke-walk-in-wardrobe-london",
     title: "Bespoke Walk-In Wardrobe",

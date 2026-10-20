@@ -9,6 +9,10 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+// Force static rendering - all slugs are pre-built at deploy time,
+// so page visits never invoke a Serverless Function.
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
